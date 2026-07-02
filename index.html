@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável - Calculadora de Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agro Forte, Futuro Sustentável 🌿</h1>
+            <p>Calcule a necessidade estimada de irrigação para sua lavoura.</p>
+        </header>
+
+        <main class="calculadora">
+            <div class="campo">
+                <label for="cultura">Tipo de Cultura:</label>
+                <select id="cultura">
+                    <option value="tomate">Tomate (Alta demanda)</option>
+                    <option value="milho">Milho (Média demanda)</option>
+                    <option value="soja">Soja (Média demanda)</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="area">Área da Plantação (em hectares):</label>
+                <input type="number" id="area" placeholder="Ex: 5" min="1">
+            </div>
+
+            <button onclick="calcularAgua()">Calcular Consumo</button>
+
+            <div id="resultado" class="resultado-oculto">
+                </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
